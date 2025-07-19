@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {SideMenuHeader} from '../../components/side-menu-header/side-menu-header';
-import {SideMenuOptions} from '../../components/side-menu-options/side-menu-options';
+import { SideMenuComponent } from "../../components/side-menu/side-menu.component";
 
 @Component({
   selector: 'app-dashboard-page',
   imports: [
     RouterOutlet,
-    SideMenuHeader,
-    SideMenuOptions
-  ],
+    SideMenuComponent
+],
   templateUrl: './dashboard-page.component.html'
 })
 export default class DashboardPageComponent { }
